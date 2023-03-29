@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+films = [
+  { name: "The Shawshank Redemption", year: 1994},
+  { name: "The Godfather", year: 1972},
+  { name: "The Dark Knight", year: 2008},
+  { name: "The Godfather 2", year: 1974}
+]
+films.each do |film|
+    Film.create(film)
+end
