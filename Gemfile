@@ -8,6 +8,9 @@ gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 
 gem 'devise', '~> 4.9', '>= 4.9.1'
 
+# Letter opener 
+gem 'letter_opener', '~> 1.8', '>= 1.8.1'
+
 gem 'will_paginate'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
