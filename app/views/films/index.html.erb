@@ -1,8 +1,14 @@
-<h1>FilmsList</h1>
+
+<h1 class="film-list-text">List of films</h1>
+
+  
 <ol>
     <% @films.each do |film| %>
 
-        <li><%= "#{film.name} (#{film.year})" %></li>
+        <li class="film-list">
+        <%= link_to("#{film.name} #{film.year}", film_path(film)) %>
+        <%= link_to("Delete", film_path(film), method: :delete) %>
+        </li>
     <% end %>
 
     <%= will_paginate @films %>

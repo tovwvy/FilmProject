@@ -1,0 +1,9 @@
+<%= form_with(model: @film, url: films_path, local: true) do |form| %>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  
+    <%= form.label :year %>
+    <%= form.number_field :year %>
+  
+    <%= form.submit "Create" %>
+<% end %>
