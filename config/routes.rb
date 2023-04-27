@@ -5,5 +5,9 @@ Rails.application.routes.draw do
   get 'films', to: 'films#index'
   get 'new',to: 'films#new'
   root 'pages#home'
-  resources :films
+  
+  resources :films do
+    resources :comments, only: [:create, :edit, :update]
+  end
+
 end

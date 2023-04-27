@@ -22,6 +22,21 @@ class FilmsController < ApplicationController
           redirect_to film_path, alert: "Film not found"
         end
       end
+    
+    def edit
+      @film = Film.find(params[:id])
+    end
+      
+    def update
+      @film = Film.find(params[:id])
+      if @film.update(film_params)
+        flash[:success] = "Film updated successfully"
+        redirect_to @film
+      else
+        render 'edit'
+      end
+    end
+    
 
     def new
         @film = Film.new
@@ -42,5 +57,9 @@ class FilmsController < ApplicationController
     private
     def permited_attributes
         params.require("film").permit("name", "year")
+    end
+
+    def film_params
+      params.require(:film).permit(:name, :year)
     end
 end
