@@ -6,8 +6,11 @@ Rails.application.routes.draw do
   get 'new',to: 'films#new'
   root 'pages#home'
   
+   
+  resources :films, only: [:update]
   resources :films do
     resources :comments, only: [:create, :edit, :update]
   end
+
 
 end
