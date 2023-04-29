@@ -1,0 +1,12 @@
+<%= form_for @film do |f| %>
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :year %>
+      <%= f.text_field :year, class: "form-control" %>
+    </div>
+    <%= f.submit "Update film", class: "btn btn-primary" %>
+  <% end %>
+  
