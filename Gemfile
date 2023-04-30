@@ -5,10 +5,10 @@ ruby '3.0.2'
 
 #bootstrap
 gem 'bootstrap', '~> 5.1.0'
-
+gem 'bootstrap_pagination', '~> 1.0', '>= 1.0.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
+gem 'rails', '~> 7.0.0', '>= 7.0.0'
 
 gem 'devise', '~> 4.9', '>= 4.9.1'
 

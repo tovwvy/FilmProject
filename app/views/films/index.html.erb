@@ -9,7 +9,9 @@
   <% end %>
 </ul>
 
-<%= will_paginate @films, class: "pagination justify-content-center" %>
+<div class="pagination justify-content-center my-3">
+  <%= will_paginate @films %>
+</div>
 
 <div class="d-flex justify-content-center mt-5">
   <%= link_to "Create new film", new_film_path, class: "btn btn-primary btn-lg" %>
