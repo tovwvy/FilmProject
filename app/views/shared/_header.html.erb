@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <%= link_to "Movie evaluate website", root_path, class: "navbar-brand" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,11 +14,11 @@
         </li>
         <% if user_signed_in? %>
           <li class="nav-item">
-            <%= link_to('Log out', destroy_user_session_path, method: :delete, class: "btn btn-primary") %>
+            <%= link_to('Log out', destroy_user_session_path, method: :delete, class: "btn btn-secondary") %>
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to('Log in', new_user_session_path, class: "btn btn-primary") %>
+            <%= link_to('Log in', new_user_session_path, class: "btn btn-secondary") %>
           </li>
         <% end %>
       </ul>

@@ -7,14 +7,20 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 films = [
-  { name: "The Shawshank Redemption", year: 1994},
-  { name: "The Godfather", year: 1972},
-  { name: "The Dark Knight", year: 2008},
-  { name: "The Godfather 2", year: 1974},
-  { name: "Coco", year: 2017},
-  { name: "After the dark", year: 2013},
-  { name: "Aladdin", year: 1992}
+  { name: "Forrest Gump", year: 1994},
+  { name: "Pulp Fiction", year: 1994},
+  { name: "The Matrix", year: 1999},
+  { name: "Fight Club", year: 1999},
+  { name: "The Silence of the Lambs", year: 1991},
+  { name: "Inception", year: 2010},
+  { name: "The Prestige", year: 2006},
+  { name: "Gladiator", year: 2000},
+  { name: "Goodfellas", year: 1990},
+  { name: "Titanic", year: 1997},
+  { name: "The Terminator", year: 1984},
+  { name: "Jurassic Park", year: 1993}
 ]
+
 films.each do |film|
     Film.create(film)
 end
